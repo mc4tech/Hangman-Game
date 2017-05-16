@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cities Hangman Game!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    
+        
+</head>
+
+<body style="background-image:url(assets/images/atlanta-georgia-skyline-cr-getty.jpg); background-size: 100% 100%; background-repeat: no-repeat;">
+  <div id = "header" class="jumbotron text-center">
+    <div class="container">
+      <div class = " col-xs-12 col-md-12">
+        <div class="row">
+          <h1>Cities Hangman</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container" >
+  <!-- Guesses -->
+    <div id = "main" class="panel panel-default col-xs-12 col-md-8">
+      <div class="page-header">
+        <div class="row">
+          <div class="col-md-8 col-sm-8 scorecol">
+            <div class="row scoredisplay">
+              <div id="remainingGuess" class="scoreFont">
+                
+              </div>
+              </div>
+             
+              <!-- Current Word -->
+              <div id="wordBlanks" class="scoreFont">
+              
+              </div>
+              <div class="row scoredisplay">
+                
+              </div>
+              
+              <div id="guessedLetters" class="scoreFont">
+          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+
+
+
+    
+    
+
+
+  <!-- Wins-->
+  <div class="panel panel-default">
+  <div class="col-md-4 col-sm-4 winlo">
+    <div class="col-md-12">
+      <div id="wins" class="scoreFont"></div>
+    </div>
+  <!-- Losses-->
+    <div class="col-md-12">
+      <div id="losses" class="scoreFont"></div>
+
+    </div>
+  </div>
+  </div>
+  <!-- end scoreboard row -->
+
+  <div id= "footer" class="copyrights text-center footer" style="margin-top:100px; ">
+      <p>
+        Copyright © 2017, All Rights Reserved
+        <br>
+        <span>Web Design By: Meguel Chavez</span>
+      </p>
+  </div>
+
+
+  
+        
+        <script src="assets/javascript/game.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</body>
+
+</html>
