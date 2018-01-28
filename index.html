@@ -8,79 +8,56 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css">
     
         
 </head>
 
-<body style="background-image:url(assets/images/atlanta-georgia-skyline-cr-getty.jpg); background-size: 100% 100%; background-repeat: no-repeat;">
-  <div id = "header" class="jumbotron text-center">
-    <div class="container">
-      <div class = " col-xs-12 col-md-12">
-        <div class="row">
-          <h1>Cities Hangman</h1>
+<body>
+
+  <div class="container">
+    
+      <div class="jumbotron">
+        <h1>Hangman Game</h1>
+        <p>U.S Cities Edition</p>  
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Word to Guess</h3>
+        </div>
+        <div class="panel-body">
+          <h2 id="wordToGuess">_ _ _ _ _ _ _</h2>
         </div>
       </div>
-    </div>
-  </div>
 
-
-  <div class="container" >
-  <!-- Guesses -->
-    <div id = "main" class="panel panel-default col-xs-12 col-md-8">
-      <div class="page-header">
-        <div class="row">
-          <div class="col-md-8 col-sm-8 scorecol">
-            <div class="row scoredisplay">
-              <div id="remainingGuess" class="scoreFont">
-                
-              </div>
-              </div>
-             
-              <!-- Current Word -->
-              <div id="wordBlanks" class="scoreFont">
-              
-              </div>
-              <div class="row scoredisplay">
-                
-              </div>
-              
-              <div id="guessedLetters" class="scoreFont">
-          
-              </div>
-            </div>
-          </div>
+      <div class="panel panel-default">
+        <div class="panel-body">
+            Wrong Guesses: <span id="wrongGuesses">4</span>
         </div>
       </div>
-   </div>
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+            Guesses Left: <span id="numGuesses">9</span>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+            Win Counter: <span id="winCounter">0</span>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+            Loss Counter: <span id="lossCounter">0</span>
+        </div>
+      </div>
+      <button id="newGameBtn" class="btn btn-primary">New Game</button>
 
 
-
-    
-    
-
-
-  <!-- Wins-->
-  <div class="panel panel-default">
-  <div class="col-md-4 col-sm-4 winlo">
-    <div class="col-md-12">
-      <div id="wins" class="scoreFont"></div>
-    </div>
-  <!-- Losses-->
-    <div class="col-md-12">
-      <div id="losses" class="scoreFont"></div>
-
-    </div>
-  </div>
-  </div>
-  <!-- end scoreboard row -->
-
-  <div id= "footer" class="copyrights text-center footer" style="margin-top:100px; ">
-      <p>
-        Copyright © 2017, All Rights Reserved
-        <br>
-        <span>Web Design By: Meguel Chavez</span>
-      </p>
   </div>
 
 
